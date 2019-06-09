@@ -1,6 +1,6 @@
 # groceries-exercise
 
-Setup
+## Setup
 
 Repo Setup
 
@@ -10,9 +10,13 @@ After creating the remote repo, use GitHub Desktop software or the command-line 
 
 After cloning the repo, navigate there from the command-line:
 
+```sh
 cd ~/Desktop/groceries-exercise
+```
+
 Use your text editor or the command-line to create a file in that repo called "groceries.py", and then place the following contents inside:
 
+```sh
 # groceries.py
 
 #from pprint import pprint
@@ -44,24 +48,32 @@ print(products)
 # pprint(products)
 
 # TODO: write some Python code here to produce the desired output
+```
+
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-Environment Setup
+##Environment Setup
 
 Create and activate a new Anaconda virtual environment:
 
+```sh
 conda create -n groceries-env python=3.7 # (first time only)
 conda activate groceries-env
+```
+
 From within the virtual environment, install the pytest package:
 
 # NOTE: we won't need pytest until/unless addressing the optional "Automated Testing" challenge,
 # so you can feel free to skip this now and return later...
 
-```
+```sh
 pip install pytest
 ```
 
 From within the virtual environment, demonstrate your ability to run the Python script from the command-line:
 
+```sh
 python groceries.py
+```
+
 If you see the provided "products" data structure, you're ready to move on to project development. This would be a great time to make any desired modifications to your project's "README.md" file (like adding instructions for how to setup and run the app like you've just done), and then make your first commit, with a message like "Setup the repo".
