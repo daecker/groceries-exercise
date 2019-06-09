@@ -52,7 +52,7 @@ print(products)
 
 Make sure to save Python files like this whenever you're done editing them. After setting up a virtual environment, we will be ready to run this file.
 
-##Environment Setup
+## Environment Setup
 
 Create and activate a new Anaconda virtual environment:
 
@@ -63,10 +63,10 @@ conda activate groceries-env
 
 From within the virtual environment, install the pytest package:
 
+```sh
 # NOTE: we won't need pytest until/unless addressing the optional "Automated Testing" challenge,
 # so you can feel free to skip this now and return later...
 
-```sh
 pip install pytest
 ```
 
