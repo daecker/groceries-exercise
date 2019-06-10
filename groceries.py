@@ -39,6 +39,25 @@ print("THERE ARE "+ str(products_count) + " PRODUCTS:")
 print("--------------")
 # pprint(products)
 
+#Step 2: Use for loop to create list of each item in products list, with name and price
+#helpful to look at each item in the list as a reference. see below:
+#
+#   "id":1, 
+#   "name": "Chocolate Sandwich Cookies", 
+#   "department": "snacks", 
+#   "aisle": "cookies cakes", 
+#   "price": 3.50
+
+#each item is a type dictionary. use course repository -- notes to see functions we can use -- 
+## we can use square products to reference attribute name
+
+
+for p in products:
+    price_usd = "${0:.2f}".format(p["price"])
+    print(" + " + p["name"] + " (" + str(price_usd) + ")")
+    
+
+
 # TODO: write some Python code here to produce the desired output
 
 
