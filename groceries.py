@@ -43,10 +43,10 @@ print("--------------")
 
 #Step 2.b: Sort our list using the sorted function. See 2.a below 2.b. We did 2.a first
 
-def sort_by_name(any_product):
+def sort_by_name(any_product): ##any_products is similar to p below, it just used to reference items in list
     return any_product["name"]
 
-sorted_products = sorted(products, key=sort_by_name)
+sorted_products = sorted(products, key=sort_by_name) #Sorted = Return a new list containing all items from the iterable in ascending order.
 
 #Step 2: Use for loop to create list of each item in products list, with name and price
 #helpful to look at each item in the list as a reference. see below:
@@ -60,10 +60,33 @@ sorted_products = sorted(products, key=sort_by_name)
 #each item is a type dictionary. use course repository -- notes to see functions we can use -- 
 ## we can use square products to reference attribute name
 
-for p in sorted_products:
+for p in sorted_products: #p is just used to reference. i.e. for each i in sum i = 1 to 100 
     price_usd = " (${0:.2f})".format(p["price"]) #formats number into a string
     print(" + " + p["name"] + price_usd)
     
+
+#PART 2: DEPARTMENT COUNT
+
+##Step 3: Create list of departments and filter using the append operator
+
+departments = []
+for p in products:
+    if p["department"] not in departments: #use if statement to find out if it exists
+        departments.append(p["department"]) 
+
+
+department_count = len(departments) #to find the len() function. look in course repository ->notes. Use this instead of hard coded number in case number of products change
+
+
+print("--------------")
+print("THERE ARE "+ str(department_count) + " DEPARTMENTS:")
+print("--------------")
+
+
+for d in departments:
+    print(d)
+
+
 
 #DESIRED GOAL
 #--------------

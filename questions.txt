@@ -2,6 +2,6 @@
  not every item in list had "price" and you wanted to know the number of items 
  in your list with a price
 
-2. when we did print(p["name"]) what was the p for?
+2. Why do you need to def sort_by_name
 
 3. Please explain what is going on here "${0:.2f}".format(p["price"])
