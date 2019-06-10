@@ -43,7 +43,9 @@ print("--------------")
 
 #Step 2.b: Sort our list using the sorted function. See 2.a below 2.b. We did 2.a first
 
-def sort_by_name(any_product): ##any_products is similar to p below, it just used to reference items in list
+def sort_by_name(any_product): ##we need to define this function so that sorted knows what to do. 
+                                ##important to note, this function alone doesn't do much. It needs us to tell it 
+                                #to operate on the products list in order to produce a result that menas something
     return any_product["name"]
 
 sorted_products = sorted(products, key=sort_by_name) #Sorted = Return a new list containing all items from the iterable in ascending order.
