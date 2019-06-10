@@ -2,6 +2,9 @@
 
 #from pprint import pprint
 
+#products is a list type. to determine the type of functions we can use with a list type,
+#look at the course repository --> notes
+
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -25,7 +28,15 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
-print(products)
+
+products_count = len(products) #to find the len() function. look in course repository ->notes. Use this instead of hard coded number in case number of products change
+
+#Step 1: Print the header of the desired goal.
+#create function products_count and use len() function to count # of items in list
+
+print("--------------")
+print("THERE ARE "+ str(products_count) + " PRODUCTS:")
+print("--------------")
 # pprint(products)
 
 # TODO: write some Python code here to produce the desired output
