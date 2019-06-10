@@ -74,6 +74,9 @@ for p in products:
     if p["department"] not in departments: #use if statement to find out if it exists
         departments.append(p["department"]) 
 
+#another techinque is to convert a list to a set, which will auto only include unqiue
+#unique_departments = list(set(departments))
+
 
 department_count = len(departments) #to find the len() function. look in course repository ->notes. Use this instead of hard coded number in case number of products change
 
@@ -82,9 +85,9 @@ print("--------------")
 print("THERE ARE "+ str(department_count) + " DEPARTMENTS:")
 print("--------------")
 
-
+departments.sort() #sort list
 for d in departments:
-    print(d)
+    print(d.title()) #print in title case
 
 
 
