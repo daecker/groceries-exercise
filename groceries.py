@@ -67,7 +67,7 @@ for p in sorted_products: #p is just used to reference. i.e. for each i in sum i
 
 #PART 2: DEPARTMENT COUNT
 
-##Step 3: Create list of departments and filter using the append operator
+##Step 3: Create unique list of departments
 
 departments = []
 for p in products:
@@ -86,8 +86,14 @@ print("THERE ARE "+ str(department_count) + " DEPARTMENTS:")
 print("--------------")
 
 departments.sort() #sort list
+
 for d in departments:
-    print(d.title()) #print in title case
+    department_count_func = [p for p in products if p["department"] == d]
+    department_count = len(department_count_func)
+    print(d.title()+ " (" + str(department_count) + " product)") #print in title case
+
+#Step 4: Count list of each department using filtering
+
 
 
 
