@@ -92,7 +92,7 @@ print("--------------")
 departments.sort() #sort list
 
 for d in departments:
-    department_count_func = [p for p in products if p["department"] == d]
+    department_count_func = [p for p in products if p["department"] == d] #the first p references what to return. So this means return p for each p in products if department = d
     department_count = len(department_count_func)
     if department_count > 1:
         label = "products"
