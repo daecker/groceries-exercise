@@ -5,3 +5,8 @@
 2. Why do you need to def sort_by_name
 
 3. Please explain what is going on here "${0:.2f}".format(p["price"])
+
+4. explain: 
+for d in departments:
+    department_count_func = [p for p in products if p["department"] == d]
+    department_count = len(department_count_func)

@@ -90,7 +90,12 @@ departments.sort() #sort list
 for d in departments:
     department_count_func = [p for p in products if p["department"] == d]
     department_count = len(department_count_func)
-    print(d.title()+ " (" + str(department_count) + " product)") #print in title case
+    if department_count > 1:
+        label = "products"
+    else:
+        label = "product"
+    
+    print(d.title()+ " (" + str(department_count) + " " + label + ")") #print in title case
 
 #Step 4: Count list of each department using filtering
 
